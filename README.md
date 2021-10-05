@@ -40,3 +40,5 @@ docker-compose up
 - **Abstract Factory** interface comum de vendas com intenção comum
 - **Builder** facilita a criação de objetos customizados disponibilizando métodos que compõem o resultado final em etapas
     > O ideal é usar a técnica *Fluent Interface* (retornar `$this`), pois permite encadeamento de métodos (melhor legibilidade)
+- **Prototype** especifica processo de clonar um objeto
+    > O PHP [já possui](https://www.php.net/manual/en/language.oop5.cloning.php) um método mágico para clonar e até especificar, se necessário, como clonar algumas propriedades
