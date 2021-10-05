@@ -25,3 +25,11 @@ docker-compose up
 > Caso modifique Dockerfile, rebuilde com ``docker-compose up --build``
 
 > Para acessar o container use ``docker-compose exec app bash`` ou execute os scripts diretamente pelo Docker ``docker-compose exec app php public/arquivo-script.php``
+
+## Anotações
+
+- **Flyweight Factory** cria ou reutiliza objetos, o algoritmo consiste em:
+    1. criar um array com todos já criados e alguma chave única que os defina
+    2. quando precisar criar um objeto testar se a chave existe
+    3. caso exista, deve retornar o objeto do array pela chave, do contrário deve criar ele conforme o passo 1
+
