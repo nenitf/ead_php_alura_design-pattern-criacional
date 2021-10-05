@@ -42,3 +42,4 @@ docker-compose up
     > O ideal é usar a técnica *Fluent Interface* (retornar `$this`), pois permite encadeamento de métodos (melhor legibilidade)
 - **Prototype** especifica processo de clonar um objeto
     > O PHP [já possui](https://www.php.net/manual/en/language.oop5.cloning.php) um método mágico para clonar e até especificar, se necessário, como clonar algumas propriedades
+- **Singleton** garante que exista apenas uma instância da classe, ideal para quando a conexão precisa ser sempre a mesma `sqlite::memory` ou se o recurso é muito custoso de recriar em memória
