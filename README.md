@@ -38,3 +38,5 @@ docker-compose up
     3. caso exista, deve retornar o objeto do array pela chave, do contrário deve criar ele conforme o passo 1
 - **Factory Method** semelhante ao template method, executa um algoritmo que depende de um método abstrato que deve ser implementado pela classe filha. Útil para reutilizar código ao invés de múltiplas factories com uma linha de diferença
 - **Abstract Factory** interface comum de vendas com intenção comum
+- **Builder** facilita a criação de objetos customizados disponibilizando métodos que compõem o resultado final em etapas
+    > O ideal é usar a técnica *Fluent Interface* (retornar `$this`), pois permite encadeamento de métodos (melhor legibilidade)
